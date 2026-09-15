@@ -1,5 +1,7 @@
 # CONTROL VARIANT (static not-found) of vercel-invalid-response-repro
 
+Repository: https://github.com/onvista-media/vercel-invalid-response-repro-static (main repro: https://github.com/onvista-media/vercel-invalid-response-repro)
+
 Same app as `vercel-invalid-response-repro`, only `app/not-found.tsx` no longer reads request headers, so `/_not-found` is fully static. If `/snapshot/unknown` returns 404 here for a browser user agent, the invalid response is tied to the partially prerendered, streamed not-found.
 
 ---
